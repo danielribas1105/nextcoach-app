@@ -25,6 +25,15 @@ export default function TabLayout() {
             }}
          />
          <Tabs.Screen
+            name="calendar"
+            options={{
+               title: "Estatística",
+               tabBarIcon: ({ color }) => (
+                  <MaterialIcons size={28} name="calendar-today" color={color} />
+               ),
+            }}
+         />
+         <Tabs.Screen
             name="explore"
             options={{
                title: "Explore",

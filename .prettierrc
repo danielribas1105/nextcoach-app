@@ -1,6 +1,7 @@
 {
-  "semi": false,
-  "printWidth": 100,
-  "tabWidth": 3,
-  "trailingComma": "all"
+   "semi": false,
+   "printWidth": 100,
+   "tabWidth": 3,
+   "trailingComma": "all",
+   "endOfLine": "auto"
 }
