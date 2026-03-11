@@ -4,7 +4,7 @@ import React from "react"
 import { HapticTab } from "@/components/haptic-tab"
 import { Colors } from "@/constants/theme"
 import { useColorScheme } from "@/hooks/use-color-scheme"
-import MaterialIcons from "@expo/vector-icons/MaterialIcons"
+import { ChartNoAxesCombined, Dumbbell, Home, User } from "lucide-react-native"
 
 export default function TabLayout() {
    const colorScheme = useColorScheme()
@@ -21,30 +21,28 @@ export default function TabLayout() {
             name="index"
             options={{
                title: "Home",
-               tabBarIcon: ({ color }) => <MaterialIcons size={28} name="home" color={color} />,
+               tabBarIcon: ({ color }) => <Home size={28} color={color} />,
             }}
          />
          <Tabs.Screen
-            name="calendar"
+            name="exercises"
             options={{
-               title: "Estatística",
-               tabBarIcon: ({ color }) => (
-                  <MaterialIcons size={28} name="calendar-today" color={color} />
-               ),
+               title: "Treinos",
+               tabBarIcon: ({ color }) => <Dumbbell size={28} color={color} />,
             }}
          />
          <Tabs.Screen
             name="explore"
             options={{
-               title: "Explore",
-               tabBarIcon: ({ color }) => <MaterialIcons size={28} name="send" color={color} />,
+               title: "Evolução",
+               tabBarIcon: ({ color }) => <ChartNoAxesCombined size={28} color={color} />,
             }}
          />
          <Tabs.Screen
             name="profile"
             options={{
                title: "Perfil",
-               tabBarIcon: ({ color }) => <MaterialIcons size={28} name="person" color={color} />,
+               tabBarIcon: ({ color }) => <User size={28} color={color} />,
             }}
          />
       </Tabs>
