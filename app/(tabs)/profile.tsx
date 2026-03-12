@@ -1,13 +1,3 @@
-import { Image, Text, TouchableOpacity, View } from "react-native"
+import ProfileScreen from "@/src/screens/profile"
 
-export default function ProfileScreen() {
-   return (
-      <View>
-         <Text>Olá, mundo!</Text>
-         <Image source={{ uri: "https://..." }} />
-         <TouchableOpacity onPress={() => alert("clicou")}>
-            <Text>Clique aqui</Text>
-         </TouchableOpacity>
-      </View>
-   )
-}
+export default ProfileScreen

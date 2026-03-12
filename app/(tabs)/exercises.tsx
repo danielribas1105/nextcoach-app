@@ -1,9 +1,3 @@
-import { Text, View } from "react-native"
+import ExercisesScreen from "@/src/screens/exercises"
 
-export default function ExercisesScreen() {
-   return (
-      <View>
-         <Text>Treino Ativo</Text>
-      </View>
-   )
-}
+export default ExercisesScreen

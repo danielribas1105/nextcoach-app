@@ -1,9 +1,9 @@
 import { Tabs } from "expo-router"
 import React from "react"
 
-import { HapticTab } from "@/components/haptic-tab"
-import { Colors } from "@/constants/theme"
-import { useColorScheme } from "@/hooks/use-color-scheme"
+import { HapticTab } from "@/src/components/haptic-tab"
+import { Colors } from "@/src/constants/theme"
+import { useColorScheme } from "@/src/hooks/use-color-scheme"
 import { ChartNoAxesCombined, Dumbbell, Home, User } from "lucide-react-native"
 
 export default function TabLayout() {
@@ -18,7 +18,7 @@ export default function TabLayout() {
          }}
       >
          <Tabs.Screen
-            name="index"
+            name="home"
             options={{
                title: "Home",
                tabBarIcon: ({ color }) => <Home size={28} color={color} />,
@@ -32,7 +32,7 @@ export default function TabLayout() {
             }}
          />
          <Tabs.Screen
-            name="explore"
+            name="evolution"
             options={{
                title: "Evolução",
                tabBarIcon: ({ color }) => <ChartNoAxesCombined size={28} color={color} />,
