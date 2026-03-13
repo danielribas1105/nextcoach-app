@@ -65,3 +65,11 @@ npx tailwindcss init
 ## Verifica dependências compatíveis e ajusta tudo para a versão expo
 
 npx expo install --fix
+
+## Components
+
+https://reactnativereusables.com/docs/installation
+
+npx @react-native-reusables/cli@latest init
+
+npx expo install clsx tailwind-merge
