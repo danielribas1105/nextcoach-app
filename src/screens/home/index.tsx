@@ -1,13 +1,21 @@
-import { Button } from "@/components/ui/button"
-import { Text, View } from "react-native"
+import { ScrollView } from "react-native"
+import { useSafeAreaInsets } from "react-native-safe-area-context"
+import ConsistencySection from "./components/consistency-section"
+import HomeBanner from "./components/home-banner"
+import TodayWorkoutSection from "./components/today-workout-section"
 
 export default function HomeScreen() {
+   const insets = useSafeAreaInsets()
+
    return (
-      <View className="flex-1 items-center justify-center bg-white p-4">
-         <Text className="text-xl font-bold text-blue-500">HOME PAGE</Text>
-         <Button>
-            <Text>HOME</Text>
-         </Button>
-      </View>
+      <ScrollView
+         className="flex-1 bg-background"
+         contentContainerStyle={{ paddingBottom: insets.bottom + 80 }} // espaço para BottomNav
+         showsVerticalScrollIndicator={false}
+      >
+         <HomeBanner />
+         <ConsistencySection />
+         <TodayWorkoutSection />
+      </ScrollView>
    )
 }
