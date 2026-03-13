@@ -3,7 +3,11 @@ import { ChartNoAxesCombined, Dumbbell, Home, User } from "lucide-react-native"
 
 export default function TabLayout() {
    return (
-      <Tabs>
+      <Tabs
+         screenOptions={{
+            headerShown: false,
+         }}
+      >
          <Tabs.Screen
             name="home"
             options={{
