@@ -21,7 +21,7 @@ export default function RootLayout() {
       if (!isAuthenticated && !inLogin) {
          router.replace("/login")
       } else if (isAuthenticated && !inTabsGroup) {
-         router.replace("/(tabs)")
+         router.replace("/(tabs)/home")
       }
    }, [isReady, isAuthenticated, segments])
 

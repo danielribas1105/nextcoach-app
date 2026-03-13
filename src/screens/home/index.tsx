@@ -4,7 +4,6 @@ import { HelloWave } from "@/src/components/hello-wave"
 import ParallaxScrollView from "@/src/components/parallax-scroll-view"
 import { ThemedText } from "@/src/components/themed-text"
 import { ThemedView } from "@/src/components/themed-view"
-import { Link } from "expo-router"
 
 export default function HomeScreen() {
    return (
@@ -36,7 +35,7 @@ export default function HomeScreen() {
                to open developer tools.
             </ThemedText>
          </ThemedView>
-         <ThemedView style={styles.stepContainer}>
+         {/* <ThemedView style={styles.stepContainer}>
             <Link href="/modal">
                <Link.Trigger>
                   <ThemedText type="subtitle">Step 2: Explore</ThemedText>
@@ -67,7 +66,7 @@ export default function HomeScreen() {
             <ThemedText>
                {`Tap the Explore tab to learn more about what's included in this starter app.`}
             </ThemedText>
-         </ThemedView>
+         </ThemedView> */}
          <ThemedView style={styles.stepContainer}>
             <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
             <ThemedText>
