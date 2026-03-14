@@ -14,7 +14,7 @@ export default function HomeBanner() {
       >
          {/* Imagem de fundo */}
          <Image
-            source={require("@/assets/images/pesos.jpg")}
+            source={require("@/assets/images/home-banner.jpg")}
             className="absolute inset-0 h-full w-full"
             resizeMode="cover"
          />

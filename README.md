@@ -73,3 +73,17 @@ https://reactnativereusables.com/docs/installation
 npx @react-native-reusables/cli@latest init
 
 npx expo install clsx tailwind-merge
+
+## Colors
+
+### Root
+
+background - #f4f7fa
+primary - #7c3aed
+destructive - #ef4444
+
+### Dark
+
+background - #030712
+primary - #6d28d9
+destructive - #7f1d1d

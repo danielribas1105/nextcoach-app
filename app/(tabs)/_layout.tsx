@@ -16,16 +16,16 @@ export default function TabLayout() {
             }}
          />
          <Tabs.Screen
-            name="exercises"
+            name="workouts-plans"
             options={{
-               title: "Exercícios",
+               title: "Treinos",
                tabBarIcon: ({ color }) => <Dumbbell size={28} color={color} />,
             }}
          />
          <Tabs.Screen
-            name="evolution"
+            name="stats"
             options={{
-               title: "Evolução",
+               title: "Estatísticas",
                tabBarIcon: ({ color }) => <ChartNoAxesCombined size={28} color={color} />,
             }}
          />
